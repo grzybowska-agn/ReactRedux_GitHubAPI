@@ -46,10 +46,13 @@ a {
 
     form {
         position: relative;
-        width: 30%;
+        width: 50%;
         padding: .5rem;
         background: @background-card-color;
         box-shadow: 0 6px 8px rgba(102,119,136,0.03), 0 1px 2px rgba(102,119,136,0.3);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         
     }
 
@@ -60,8 +63,9 @@ a {
         color: @text-color;
         font-family: @font;
         font-size: 1rem;
-        width: 70%;
+        width: auto;
         letter-spacing: 1px;
+        flex-basis: 60%;
         
 
         &::placeholder {
@@ -106,6 +110,12 @@ a {
             font-size: 1rem;
             line-height: 2rem;
         }
+
+        &:hover {
+            background: @background-card-color;
+            cursor: pointer;
+            color: @accent-color;
+        }
     }
 }
 
@@ -116,7 +126,7 @@ a {
 }
 
 .list-item {
-    width: 30%;
+    width: 50%;
     margin: 1rem auto;
     background: @background-card-color;
     border-radius: 2px;
